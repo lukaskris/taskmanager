@@ -66,7 +66,7 @@ This project follows the **Clean Architecture** pattern and is structured into f
 
 ---
 
-## 📊 Suggested Diagram
+## 📊 Diagram
 
 ```
 ┌─────────────────────────────┐
