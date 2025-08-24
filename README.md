@@ -6,7 +6,21 @@ A scalable and maintainable **Flutter Task Management App** built with Clean Arc
 
 ---
 
-## 📐 Architecture Overview
+## Offline Sync Mechanism
+
+The app includes a full offline capability:
+
+- When the device is **offline**, actions like **Add**, **Update**, and **Delete** tasks are stored in **Hive (local storage)** with a `pendingSync` or `deletedId` flag.
+- Once the device regains **internet connection**, a **background sync** process automatically:
+  - Uploads `pendingSync` tasks to Firebase
+  - Deletes any queued deletions from the server
+  - Updates the local cache to reflect the latest server state
+
+This allows a seamless experience even in poor connectivity environments.
+
+---
+
+## Architecture Overview
 
 This project follows the **Clean Architecture** pattern and is structured into four primary layers + routing:
 
@@ -66,7 +80,7 @@ This project follows the **Clean Architecture** pattern and is structured into f
 
 ---
 
-## 📊 Diagram
+## Diagram
 
 ```
 ┌─────────────────────────────┐
@@ -97,7 +111,7 @@ This project follows the **Clean Architecture** pattern and is structured into f
 
 ---
 
-## 🛠 Tech Stack
+## Tech Stack
 
 | Tech              | Description                          |
 | ----------------- | ------------------------------------ |
@@ -121,7 +135,7 @@ flutter test
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 ```bash
 git clone https://github.com/lukaskris/taskmanager.git
@@ -132,7 +146,7 @@ flutter run
 
 ---
 
-## 📂 Folder Structure
+## Folder Structure
 
 ```txt
 /lib
@@ -146,7 +160,23 @@ flutter run
 
 ---
 
-## ⚙️ CI/CD (GitHub Actions)
+## Screenshots
+
+### Light Mode
+
+| Login                              | Task List                              | Add Task                                | Update Task                              | Delete Task                              |
+| ---------------------------------- | -------------------------------------- | --------------------------------------- | ---------------------------------------- | ---------------------------------------- |
+| ![](screenshoots/login_light.webp) | ![](screenshoots/task_list_light.webp) | ![](screenshoots/task_input_light.webp) | ![](screenshoots/task_update_light.webp) | ![](screenshoots/task_delete_light.webp) |
+
+### Dark Mode
+
+| Login                             | Task List                             | Add Task                               | Update Task                              | Delete Task                             |
+| --------------------------------- | ------------------------------------- | -------------------------------------- | ---------------------------------------- | --------------------------------------- |
+| ![](screenshoots/login_dark.webp) | ![](screenshoots/task_list_dark.webp) | ![](screenshoots/task_input_dark.webp) | ![](screenshoots/task_update_light.webp) | ![](screenshoots/task_delete_dark.webp) |
+
+---
+
+## CI/CD (GitHub Actions)
 
 This project includes a GitHub Actions workflow to:
 
@@ -158,13 +188,13 @@ See `.github/workflows/flutter_ci.yml`
 
 ---
 
-## 📄 License
+## License
 
 This project is licensed under the MIT License. See [LICENSE](LICENSE) for more information.
 
 ---
 
-## 🙌 Acknowledgements
+## Acknowledgements
 
 - [Bloc](https://bloclibrary.dev/)
 - [Hive](https://docs.hivedb.dev/)
@@ -174,12 +204,12 @@ This project is licensed under the MIT License. See [LICENSE](LICENSE) for more 
 
 ---
 
-## ✨ Contributors
+## Contributors
 
 Feel free to open PRs, issues, or suggestions!
 
 ---
 
-## 📬 Contact
+## Contact
 
 For questions, feel free to reach out at: [lukaskris12@gmail.com](mailto:lukaskris12@gmail.com)

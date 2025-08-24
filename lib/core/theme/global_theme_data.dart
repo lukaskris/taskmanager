@@ -29,25 +29,6 @@ ThemeData lightTheme = ThemeData(
 
 ThemeData darkTheme = ThemeData(
   brightness: Brightness.dark,
-  primaryColor: primaryColor,
-  colorScheme: ColorScheme.dark(
-    primary: primaryColor,
-    onPrimary: Colors.white,
-    secondary: primaryColor.withOpacity(0.8),
-    onSecondary: Colors.white,
-    background: Color(0xFF121212),
-    onBackground: Colors.white70,
-    surface: Color(0xFF1E1E1E),
-    onSurface: Colors.white70,
-  ),
-  appBarTheme: AppBarTheme(
-    backgroundColor: primaryColor,
-    foregroundColor: Colors.white,
-    elevation: 2,
-  ),
-  floatingActionButtonTheme: FloatingActionButtonThemeData(
-    backgroundColor: primaryColor,
-    foregroundColor: Colors.white,
-  ),
-  scaffoldBackgroundColor: Color(0xFF121212),
+  colorScheme: ColorScheme.fromSeed(
+      seedColor: primaryColor, brightness: Brightness.dark),
 );

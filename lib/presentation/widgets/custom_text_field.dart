@@ -77,18 +77,20 @@ class _CustomTextFieldState extends State<CustomTextField> {
             ? IconButton(
                 icon: Icon(
                   _obscureText ? Icons.visibility_off : Icons.visibility,
-                  color: Colors.grey[600],
+                  color: context.colorScheme.onSurface.withValues(alpha: .6),
                 ),
                 onPressed: _toggleObscure,
               )
             : widget.suffixIcon,
         border: OutlineInputBorder(
           borderRadius: BorderRadius.circular(8),
-          borderSide: BorderSide(color: Colors.grey[300]!),
+          borderSide: BorderSide(
+              color: context.colorScheme.onSurface.withValues(alpha: .3)),
         ),
         enabledBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(8),
-          borderSide: BorderSide(color: Colors.grey[300]!),
+          borderSide: BorderSide(
+              color: context.colorScheme.onSurface.withValues(alpha: .3)),
         ),
         focusedBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(8),
@@ -98,9 +100,11 @@ class _CustomTextFieldState extends State<CustomTextField> {
         errorStyle: TextStyle(color: Colors.red),
         contentPadding: EdgeInsets.symmetric(vertical: 14, horizontal: 16),
         hintText: widget.hintText,
-        hintStyle: TextStyle(color: Colors.grey[600]),
+        hintStyle: TextStyle(
+            color: context.colorScheme.onSurface.withValues(alpha: .6)),
       ),
-      style: TextStyle(color: Colors.black87),
+      style: TextStyle(
+          color: context.colorScheme.onSurface.withValues(alpha: .87)),
     );
   }
 }

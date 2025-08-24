@@ -1,7 +1,7 @@
 name: taskmanager
 description: "Task Manager"
 
-publish_to: "none" # Remove this line if you wish to 
+publish_to: "none" # Remove this line if you wish to
 version: 1.0.0+1
 
 environment:
@@ -72,7 +72,6 @@ flutter:
   generate: true
   # To add assets to your application, add an assets section, like this:
   assets:
-    - assets/images/
     - assets/icons/
 
   # An image asset can refer to one or more resolution-specific "variants", see

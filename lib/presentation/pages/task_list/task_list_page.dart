@@ -125,13 +125,16 @@ class _TaskListPageState extends State<TaskListPage> {
                                     : context.colorScheme.onSurface
                                         .withValues(alpha: .5)),
                             borderRadius: BorderRadius.circular(10),
+                            color: state.status == 0
+                                ? context.colorScheme.secondary
+                                : context.colorScheme.surface,
                           ),
                           alignment: Alignment.center,
                           padding: EdgeInsets.all(8),
                           child: AppTypography(
                               text: 'All',
                               color: state.status == 0
-                                  ? context.colorScheme.secondary
+                                  ? context.colorScheme.onSecondary
                                   : context.colorScheme.onSurface
                                       .withValues(alpha: .5)),
                         ),
@@ -148,13 +151,16 @@ class _TaskListPageState extends State<TaskListPage> {
                                     : context.colorScheme.onSurface
                                         .withValues(alpha: .5)),
                             borderRadius: BorderRadius.circular(10),
+                            color: state.status == 1
+                                ? context.colorScheme.secondary
+                                : context.colorScheme.surface,
                           ),
                           alignment: Alignment.center,
                           padding: EdgeInsets.all(8),
                           child: AppTypography(
                               text: 'To Do',
                               color: state.status == 1
-                                  ? context.colorScheme.secondary
+                                  ? context.colorScheme.onSecondary
                                   : context.colorScheme.onSurface
                                       .withValues(alpha: .5)),
                         ),
@@ -170,13 +176,16 @@ class _TaskListPageState extends State<TaskListPage> {
                                     : context.colorScheme.onSurface
                                         .withValues(alpha: .5)),
                             borderRadius: BorderRadius.circular(10),
+                            color: state.status == 2
+                                ? context.colorScheme.secondary
+                                : context.colorScheme.surface,
                           ),
                           alignment: Alignment.center,
                           padding: EdgeInsets.all(8),
                           child: AppTypography(
                               text: 'In Progress',
                               color: state.status == 2
-                                  ? context.colorScheme.secondary
+                                  ? context.colorScheme.onSecondary
                                   : context.colorScheme.onSurface
                                       .withValues(alpha: .5)),
                         ),
@@ -193,13 +202,16 @@ class _TaskListPageState extends State<TaskListPage> {
                                     : context.colorScheme.onSurface
                                         .withValues(alpha: .5)),
                             borderRadius: BorderRadius.circular(10),
+                            color: state.status == 3
+                                ? context.colorScheme.secondary
+                                : context.colorScheme.surface,
                           ),
                           alignment: Alignment.center,
                           padding: EdgeInsets.all(8),
                           child: AppTypography(
                               text: 'Done',
                               color: state.status == 3
-                                  ? context.colorScheme.secondary
+                                  ? context.colorScheme.onSecondary
                                   : context.colorScheme.onSurface
                                       .withValues(alpha: .5)),
                         ),
