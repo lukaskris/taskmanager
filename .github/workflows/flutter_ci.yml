@@ -27,6 +27,10 @@ jobs:
       - name: Install Dependencies
         run: flutter pub get
 
+      # Run build_runner to check generated files
+      - name: Build (optional)
+        run: flutter pub run build_runner build --delete-conflicting-outputs
+
       # Analyze
       - name: Run Analyzer
         run: flutter analyze
@@ -34,7 +38,3 @@ jobs:
       # Run tests
       - name: Run Unit Tests
         run: flutter test
-
-      # Optionally: Run build_runner to check generated files
-      - name: Build Mocks (optional)
-        run: flutter pub run build_runner build --delete-conflicting-outputs

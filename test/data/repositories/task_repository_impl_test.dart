@@ -41,7 +41,6 @@ void main() {
     );
   });
 
-  const email = 'user@gmail.com';
   const userId = '123';
   final model = TaskModel(
     id: '1',
