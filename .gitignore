@@ -1,0 +1,130 @@
+# Flutter/Dart/Pub related
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.flutter-versions
+.packages
+.pub-cache/
+build/
+.melos_tool/
+*.dart.js
+*.info.json
+*.config.dart
+
+# Code generation
+*.g.dart
+*.freezed.dart
+**/generated_plugin_registrant.dart
+
+# Coverage
+coverage/
+app.*.symbols
+*.lcov
+
+# Firebase
+google-services.json
+firebase-debug.log
+ios/Runner/GoogleService-Info.plist
+
+# Hive specific
+*.hive
+*.hive2
+.hive/
+
+# Android
+android/.gradle/
+android/.idea/
+**/android/captures/
+**/android/**/gradle-wrapper.jar
+**/android/gradlew
+**/android/gradlew.bat
+**/android/local.properties
+**/android/key.properties
+**/android/**/*.apk
+**/android/**/*.ap_
+**/android/**/*.aar
+**/android/app/release/
+*.jks
+
+# iOS
+ios/.generated/
+ios/.symlinks/
+ios/Flutter/
+ios/Pods/
+ios/Runner.xcworkspace/
+**/ios/**/*.mode1v3
+**/ios/**/*.mode2v3
+**/ios/**/*.pbxuser
+**/ios/**/*.perspectivev3
+**/ios/**/*.xcuserstate
+**/ios/**/profile
+**/ios/**/xcuserdata
+**/ios/Flutter/App.framework
+**/ios/Flutter/Flutter.framework
+**/ios/Flutter/Generated.xcconfig
+**/ios/Flutter/flutter_export_environment.sh
+**/ios/ServiceDefinitions.json
+**/ios/Runner/GeneratedPluginRegistrant.*
+
+# macOS
+macos/.generated/
+macos/Flutter/ephemeral/
+macos/Pods/
+macos/Runner.xcworkspace/
+**/macos/**/*.xcuserstate
+
+# Linux
+linux/flutter/ephemeral/
+linux/flutter/generated_plugin_registrant.*
+
+# Windows
+windows/flutter/ephemeral/
+windows/flutter/generated_plugin_registrant.*
+
+# Web
+web/assets/
+web/.dart_tool/
+web/generated_plugin_registrant.dart
+
+# Symbolication
+*.symbols
+simbol/
+symbols/
+.cxx/
+
+# IDEs
+.idea/
+.vscode/
+*.iml
+*.ipr
+*.iws
+*.class
+*.lock
+*.log
+*.swp
+*.swo
+*.pyc
+*.pyo
+*.pyd
+*.history
+*.sublime-workspace
+*.sublime-project
+.DS_Store
+*.tgz
+
+# Misc
+.atom/
+.buildlog/
+.svn/
+.project
+.settings/
+.classpath
+
+# Optional exceptions
+!**/ios/**/default.mode1v3
+!**/ios/**/default.mode2v3
+!**/ios/**/default.pbxuser
+!**/ios/**/default.perspectivev3
+
+# Dependency override
+pubspec.lock

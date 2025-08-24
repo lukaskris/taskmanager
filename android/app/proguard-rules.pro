@@ -1,0 +1,6 @@
+ -keep class com.hiennv.flutter_callkit_incoming.** { *; }
+ -keepnames class com.fasterxml.jackson.** { *; }
+ -dontwarn com.fasterxml.jackson.databind.**
+ -keep class java.beans.** { *; }
+ -keep class org.conscrypt.** { *; }
+ -dontwarn okhttp3.internal.platform.*

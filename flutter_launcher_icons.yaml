@@ -1,0 +1,12 @@
+# flutter pub run flutter_launcher_icons
+flutter_launcher_icons:
+  image_path: "assets/icons/taskmanager.png"
+
+  android: "launcher_icon"
+
+  adaptive_icon_background: "#2596be"
+  adaptive_icon_foreground: "assets/icons/taskmanager.png"
+  min_sdk_android: 21
+
+  ios: true
+  remove_alpha_channel_ios: true
